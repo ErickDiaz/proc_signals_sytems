@@ -1,4 +1,5 @@
-t = -8:1:8;
+inct = 0.1;
+t = -8:inct:8;
 x_real = real(exp(j*(pi/2)*t));
 x_imag = imag(exp(j*(pi/2)*t));
 x_abs = abs(exp(j*(pi/2)*t));

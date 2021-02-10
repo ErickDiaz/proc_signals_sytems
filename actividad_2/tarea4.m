@@ -20,5 +20,5 @@ X_0= sum(x);
 xf = xf/N;
 
 X_0=X_0/N
-xf(1)
+fft_1 = xf(1)
 media

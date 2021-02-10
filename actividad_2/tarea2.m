@@ -9,16 +9,17 @@ syms n x;
 n = 0:1:5;
 a = [2 exp(-j*pi/2) 2*exp(j*pi) 1 2*exp(j*pi) exp(-j*pi/2)];
 
+N=6; %Periodo
+x = N*ifft(a);
+
 subplot(1,3,1)
-plot = stem(n, a);
+plot = stem(n, x);
 plot.LineWidth = 1.5
 xlabel('n');
 ylabel('x_a[n]');
 title('x_a[n]');
 
 %======= xa, Re(cm) ===========
-N=6; %Periodo
-x = N*ifft(a);
 %cm = 0+round(cm*10^10)/10^10;
 
 subplot(1,3,2);
@@ -35,3 +36,4 @@ plot.LineWidth = 1.5;
 xlabel('n');
 ylabel('x_a[n]');
 title('Imag(c_m)');
+

@@ -81,7 +81,7 @@ ylabel('x_2[n]');
 title('x_2[n]');
 
 %======= x2, Re(cm) ===========
-N=6; %Periodo
+N=4; %Periodo
 cm = (1/N)*fft(x2);
 cm = 0+round(cm*10^10)/10^10;
 
